@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+</head>
+<body>
+<section id="topbar" class="d-flex align-items-center">
+  <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="contact-info d-flex align-items-center">
+      <i class="bi bi-envelope-fill "></i>&nbsp;<a href="mailto:contact@example.com">info@example.com</a> &nbsp;&nbsp;
+      <i class="bi bi-phone-fill"></i> +1 5589 55488 55
+    </div>
+    <div class="social-links d-none d-md-block">
+      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://onetouchmedia.vn/wp-content/uploads/2019/10/N.NT-31.jpg" class="d-block w-100" alt="..."
+           style="height: 350px;width: 100%">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://hotel84.com/hotel84-images/product/photo/beboi-villa-Vedana-Lagoon.jpg" class="d-block w-100"
+           alt="..." style="height: 350px;width: 100%">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="http://sw001.hstatic.net/8/1370887de2367a/shangri-las-boracay-resort-and-spa-philippines-03_master.jpg"
+           class="d-block w-100" alt="..." style="height: 350px;width: 100%">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand">Home</a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse1">
+      <div class="navbar-nav">
+        <a href="#" class="nav-item nav-link">Facility</a>
+        <a href="#" class="nav-item nav-link">Employee</a>
+        <a href="#" class="nav-item nav-link">Contract</a>
+      </div>
+      <form class="d-flex ms-auto">
+        <input type="text" class="form-control me-sm-2" placeholder="Search">
+        <button type="submit" class="btn btn-outline-light">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<hr>
+<div class="row" style="margin-right: unset;padding-left: 45px">
+  <div class="col-md-1" style="width: 12.499999995%"></div>
+
+  <div class="col-md-3" style="padding-right:10px">
+    <div class="card position-relative" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKbUC6k0eei4ZeUNiIHOJwtEw7_qW50CESA&usqp=CAU"
+           class="card-img-top" alt="..." style="height: 150px">
+      <div class="card-body" style="color: #adb5bd">
+        <h5 class="card-title">Villa</h5>
+        <p class="card-text">Villa size:300m<sup>2</sup></p>
+        <a href="#" class="btn btn-primary">Edit</a>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Delete</a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwqph6GlnNF2IIIICR2YqRabFkgrvkl182w&usqp=CAU"
+           alt="" style="height: 150px">
+      <div class="card-body">
+        <h5 class="card-title">House</h5>
+        <p class="card-text">House size:150m<sup>2</sup></p>
+        <a href="#" class="btn btn-primary">Edit</a>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8TWFaVuNkQyhL_FtPMx0Aj2MD0i-9-i1mA&usqp=CAU"
+           class="card-img-top" alt="..." style="height: 150px">
+      <div class="card-body">
+        <h5 class="card-title">Room</h5>
+        <p class="card-text">Room size:80m<sup>2</sup></p>
+        <a href="#" class="btn btn-primary">Edit</a>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1" style="width: 12.499999995%"></div>
+</div>
+&nbsp;
+
+<div class="row" style="margin-right: unset;padding-left: 45px">
+  <div class="col-md-1" style="width: 12.499999995%"></div>
+
+  <div class="col-md-3" style="padding-right:10px">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKbUC6k0eei4ZeUNiIHOJwtEw7_qW50CESA&usqp=CAU"
+           class="card-img-top" alt="..." style="height: 150px">
+      <div class="card-body" style="color: #adb5bd">
+        <h5 class="card-title">Villa</h5>
+        <p class="card-text">Villa size:300m<sup>2</sup></p>
+        <a href="#" class="btn btn-primary">Edit</a>
+        <a href="#" class="btn btn-primary">Delete</a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwqph6GlnNF2IIIICR2YqRabFkgrvkl182w&usqp=CAU"
+           alt="" style="height: 150px">
+      <div class="card-body">
+        <h5 class="card-title">House</h5>
+        <p class="card-text">House size:150m<sup>2</sup></p>
+        <a href="#" class="btn btn-primary">Edit</a>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8TWFaVuNkQyhL_FtPMx0Aj2MD0i-9-i1mA&usqp=CAU"
+           class="card-img-top" alt="..." style="height: 150px">
+      <div class="card-body">
+        <h5 class="card-title">Room</h5>
+        <p class="card-text">Room size:80m<sup>2</sup></p>
+        <a href="#" class="btn btn-primary">Edit</a>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1" style="width: 12.499999995%"></div>
+</div>
+<hr>
+<footer>
+  <div class="row g-0" style="margin-right: unset;">
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <ul style="list-style-type: none">
+        <li style="font-size: 15px"><i class="bi bi-airplane">&nbsp;&nbsp;</i>103 - 105 Vo Nguyen Giap Street, Khue My
+          Ward, Ngu Hanh Son District, Danang City, Vietnam
+        </li>
+        <li style="font-size: 15px"><i class="bi bi-telephone-forward">&nbsp;&nbsp;</i>Tel.: 84-236-3847 333/888 * Fax:
+          84-236-3847 666
+        </li>
+        <li style="font-size: 15px"><i class="bi bi-envelope-fill">&nbsp;</i> Email: reservation@furamavietnam.com *
+          www.furamavietnam.com
+        </li>
+        <li style="font-size: 14px"><i class="bi bi-qr-code"></i>&nbsp;&nbsp;GDS Codes: Amadeus-GD DADFUR,
+          Galileo/Apollo-GD 16236,Sabre-GD 032771, Worldspan- GD DADFU
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</html>
