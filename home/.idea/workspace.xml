@@ -19,7 +19,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8746c41-123a-4599-9c4a-30aa9a00f2cf" name="Default Changelist" comment="" />
+    <list default="true" id="b8746c41-123a-4599-9c4a-30aa9a00f2cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/exercise/fibonacci/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/exercise/fibonacci/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/exercise/fibonacci/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/exercise/fibonacci/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/exercise/fibonacci/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/bien/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/bien/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/nguyento/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/nguyento/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/nguyento/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/nguyento/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/typescript-is-prime/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/typescript-is-prime/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/typescript-is-prime/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/typescript-is-prime/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/typescript-is-prime/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/typescript-is-prime/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_s2_typescript/practise/typescript-is-prime/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +53,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2BuqgwnvsrEjKGnYV91kylLi0cD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -50,6 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,6 +85,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\C0222G1_Ho_Duy_Tuan_module5\home" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\C0222G1_Ho_Duy_Tuan_module5\casestudy\home" />
     </key>
@@ -73,6 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657766432867</updated>
       <workItem from="1657766434107" duration="19374000" />
+      <workItem from="1657872630305" duration="5185000" />
     </task>
     <servers />
   </component>
@@ -89,6 +120,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="447" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1657782197904">

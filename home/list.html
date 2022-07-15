@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<table class="table table-hover">
+    <tr>
+        <td>No:</td>
+        <th>Name Service</th>
+        <th>Area Service</th>
+        <th>Cost Service</th>
+        <th>Max People Service</th>
+        <th>Rent Type</th>
+        <th>Service Type</th>
+        <th>Detail</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Villa 2</td>
+        <td>400m <sup>2</sup></td>
+        <td>300</td>
+        <td>6</td>
+        <td>Năm</td>
+        <td>Villa</td>
+        <td>
+            <div>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".detail">
+                    <i class="bi bi-trash">Detail</i>
+                </a>
+            </div>
+        </td>
+        <td><a href="edit.html" class="btn btn-primary">Edit</a>
+        </td>
+        <td>
+            <div>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".myModal"><i class="bi bi-trash">Delete</i>
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>House 1</td>
+        <td>200m <sup>2</sup></td>
+        <td>300</td>
+        <td>6</td>
+        <td>Ngày</td>
+        <td>House</td>
+        <td>
+            <div>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".detail">
+                    <i class="bi bi-trash">Detail</i>
+                </a>
+            </div>
+        </td>
+        <td><a href="edit.html" class="btn btn-primary">Edit</a>
+        </td>
+        <td>
+            <div>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".myModal"><i class="bi bi-trash">Delete</i>
+                </a>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<!--modal deltail-->
+<div class="modal detail">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Detail Service</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--delete-->
+<div class="modal myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Delete Service</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                Do you want delete?
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Yes</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</html>
