@@ -13,31 +13,27 @@
 <table class="table table-hover">
     <tr>
         <td>No:</td>
-        <th>Name Service</th>
-        <th>Area Service</th>
-        <th>Cost Service</th>
-        <th>Max People Service</th>
-        <th>Rent Type</th>
-        <th>Service Type</th>
-        <th>Detail</th>
+        <th>Name Customer</th>
+        <th>Birth Day Customer</th>
+        <th>Gender</th>
+        <th>ID Car</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>ID Type Customer</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
     <tr>
         <td>1</td>
-        <td>Villa 2</td>
-        <td>400m <sup>2</sup></td>
-        <td>300</td>
-        <td>6</td>
-        <td>Năm</td>
-        <td>Villa</td>
-        <td>
-            <div>
-                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".detail">
-                    <i class="bi bi-trash">Detail</i>
-                </a>
-            </div>
-        </td>
+        <td>Tuan</td>
+        <td>29/09/2009</td>
+        <td>Nam</td>
+        <td>123456789</td>
+        <td>0908989897</td>
+        <td>d*****@gmail.com</td>
+        <td>Ngu Hanh Son,Da nang</td>
+        <td>Gold</td>
         <td><a href="edit.html" class="btn btn-primary">Edit</a>
         </td>
         <td>
@@ -47,21 +43,17 @@
             </div>
         </td>
     </tr>
+
     <tr>
-        <td>1</td>
-        <td>House 1</td>
-        <td>200m <sup>2</sup></td>
-        <td>300</td>
-        <td>6</td>
-        <td>Ngày</td>
-        <td>House</td>
-        <td>
-            <div>
-                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".detail">
-                    <i class="bi bi-trash">Detail</i>
-                </a>
-            </div>
-        </td>
+        <td>2</td>
+        <td>Nuan</td>
+        <td>29/09/2010</td>
+        <td>Nu</td>
+        <td>123456789</td>
+        <td>0911123954</td>
+        <td>d*****@gmail.com</td>
+        <td>Da nang</td>
+        <td>Gold</td>
         <td><a href="edit.html" class="btn btn-primary">Edit</a>
         </td>
         <td>
@@ -73,34 +65,6 @@
     </tr>
 </table>
 
-<!--modal deltail-->
-<div class="modal detail">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h4 class="modal-title">Detail Service</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-            </div>
-
-        </div>
-    </div>
-</div>
-
 <!--add-->
 <div class="modal" id="add">
     <div class="modal-dialog">
@@ -108,32 +72,44 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Add Service</h4>
+                <h4 class="modal-title">Add Customer</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
+
+            <td>No:</td>
+            <th>Name Customer</th>
+            <th>Birth Day Customer</th>
+            <th>Gender</th>
+            <th>ID Car</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>ID Type Customer</th>
+            <th>Edit</th>
+            <th>Delete</th>
 
             <div class="modal-body">
                 <form action="" method="post" class="">
                     <div class="form-floating mb-3 mt-3">
                         <input class="form-control" type="text"  placeholder="Enter Name">
-                        <label class="form-label">Id Service: </label>
+                        <label class="form-label">Id Customer: </label>
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <input class="form-control" type="text"  id="nameEdit" placeholder="Enter Name">
-                        <label class="form-label">Name Service: </label>
+                        <label class="form-label">Name Customer: </label>
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <input class="form-control" type="text"  id="areaEdit" placeholder="Area">
-                        <label class="form-label">Area Service: </label>
+                        <label class="form-label">Birth Day Customer: </label>
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <input class="form-control" type="text"  id="costEdit" placeholder="Cost">
-                        <label class="form-label">Cost Service:</label>
+                        <label class="form-label">Gender:</label>
                     </div>
                     <div class="form-floating mb-3 mt-3" id="typeEdit">
                         <input class="form-control" type="text"  placeholder="maxPeople">
 
-                        <label class="form-label">Service Type: </label>
+                        <label class="form-label">ID Car: </label>
                     </div>
                     <div class="form-floating mb-3 mt-3" id="rentEdit">
                         <input class="form-control" type="text" placeholder="maxPeople">
@@ -142,30 +118,20 @@
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <input class="form-control" type="text" id="maxPeopleEdit" placeholder="maxPeople">
-                        <label class="form-label">Max People Service: </label>
+                        <label class="form-label">Phone </label>
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <input class="form-control" type="text" id="roomEdit" placeholder="Room">
-                        <label class="form-label">Room Service:</label>
+                        <label class="form-label">Email:</label>
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <input type="text" class="form-control" id="descriptionEdit"
                                placeholder="Description">
-                        <label class="form-label">Description Service: </label>
+                        <label class="form-label">Address: </label>
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <input type="text" class="form-control" id="poolAreaEdit" placeholder="poolArea">
-                        <label class="form-label">Pool Area Service: </label>
-                    </div>
-                    <div class="form-floating mb-3 mt-3">
-                        <input type="text" class="form-control" id="numberFloorsEdit"
-                               placeholder="numberFloors">
-                        <label class="form-label">Number Floors Service: </label>
-                    </div>
-                    <div class="form-floating mb-3 mt-3">
-                        <input type="text" class="form-control" id="freess"
-                               placeholder="numberFloors">
-                        <label class="form-label">Free Service: </label>
+                        <label class="form-label">ID Type Customer: </label>
                     </div>
                     <div class="form-floating mb-3 mt-3">
                         <button type="submit" class="btn btn-primary" id="hrefs">Update</button>
@@ -188,7 +154,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Delete Service</h4>
+                <h4 class="modal-title">Delete Customer</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
