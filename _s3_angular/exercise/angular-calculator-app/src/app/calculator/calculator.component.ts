@@ -6,15 +6,15 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent implements OnInit {
-   number1 :any;
-  number2 :any;
+  number1: number = 0;
+  number2: number = 0;
   result: any;
 
   constructor() {
   }
 
   addition() {
-    this.result = this.number1*1 + this.number2*1
+    this.result = this.number1 * 1 + this.number2 * 1
   }
 
   subtraction() {

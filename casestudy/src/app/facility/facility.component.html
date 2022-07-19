@@ -1,0 +1,167 @@
+<app-header></app-header>
+<div class="row" style="margin-right: unset;padding-left: 45px">
+  <div class="col-md-1" style="width: 12.499999995%"></div>
+
+  <div class="col-md-3" style="padding-right:10px">
+    <div class="card position-relative" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKbUC6k0eei4ZeUNiIHOJwtEw7_qW50CESA&usqp=CAU"
+           class="card-img-top" alt="..." style="height: 150px">
+      <div class="card-body" style="color: #adb5bd">
+        <h5 class="card-title">Villa</h5>
+        <p class="card-text">Villa size:300m<sup>2</sup></p>
+        <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Edit</a>
+        <a href="#" class="btn btn-primary delete" data-bs-toggle="modal" data-bs-target="#myModal">Delete</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card flex-wrap" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwqph6GlnNF2IIIICR2YqRabFkgrvkl182w&usqp=CAU"
+           alt="" style="height: 150px">
+      <div class="card-body">
+        <h5 class="card-title">House</h5>
+        <p class="card-text">House size:150m<sup>2</sup></p>
+        <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Edit
+        </a> <a href="#" class="btn btn-primary delete">Delete</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8TWFaVuNkQyhL_FtPMx0Aj2MD0i-9-i1mA&usqp=CAU"
+           class="card-img-top" alt="..." style="height: 150px">
+      <div class="card-body">
+        <h5 class="card-title">Room</h5>
+        <p class="card-text">Room size:80m<sup>2</sup></p>
+        <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Edit</a>
+        <a href="#" class="btn btn-primary delete">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1" style="width: 12.499999995%"></div>
+</div>
+&nbsp;
+
+<div class="row" style="margin-right: unset;padding-left: 45px">
+  <div class="col-md-1" style="width: 12.499999995%"></div>
+
+  <div class="col-md-3" style="padding-right:10px">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKbUC6k0eei4ZeUNiIHOJwtEw7_qW50CESA&usqp=CAU"
+           class="card-img-top" alt="..." style="height: 150px">
+      <div class="card-body" style="color: #adb5bd">
+        <h5 class="card-title">Villa</h5>
+        <p class="card-text">Villa size:300m<sup>2</sup></p>
+        <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Edit</a>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwqph6GlnNF2IIIICR2YqRabFkgrvkl182w&usqp=CAU"
+           alt="" style="height: 150px">
+      <div class="card-body">
+        <h5 class="card-title">House</h5>
+        <p class="card-text">House size:150m<sup>2</sup></p>
+        <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Edit</a>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa8TWFaVuNkQyhL_FtPMx0Aj2MD0i-9-i1mA&usqp=CAU"
+           class="card-img-top" alt="..." style="height: 150px">
+      <div class="card-body">
+        <h5 class="card-title">Room</h5>
+        <p class="card-text">Room size:80m<sup>2</sup></p>
+        <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Edit</a>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1" style="width: 12.499999995%"></div>
+</div>
+
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="" method="post" class="">
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="nameEdit" placeholder="Enter Name">
+            <label class="form-label">Name Service: Villa 2 </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="areaEdit" placeholder="Area">
+            <label class="form-label">Area Service: 400m <sup>2</sup> </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="costEdit" placeholder="Cost">
+            <label class="form-label">Cost Service:50000000 <sup>vnđ</sup> </label>
+          </div>
+          <div class="form-floating mb-3 mt-3" id="typeEdit">
+            <input class="form-control" type="text" placeholder="maxPeople">
+
+            <label class="form-label">Service Type: Villa</label>
+          </div>
+          <div class="form-floating mb-3 mt-3" id="rentEdit">
+            <input class="form-control" type="text" placeholder="maxPeople">
+
+            <label class="form-label">Rent Type:Năm </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="maxPeopleEdit" placeholder="maxPeople">
+            <label class="form-label">Max People Service: 5 người </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="roomEdit" placeholder="Room">
+            <label class="form-label">Room Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="descriptionEdit"
+                   placeholder="Description">
+            <label class="form-label">Description Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="poolAreaEdit" placeholder="poolArea">
+            <label class="form-label">Pool Area Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="numberFloorsEdit"
+                   placeholder="numberFloors">
+            <label class="form-label">Number Floors Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="freess"
+                   placeholder="numberFloors">
+            <label class="form-label">Free Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <button type="submit" class="btn btn-primary" id="hrefs">Update</button>
+          </div>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+

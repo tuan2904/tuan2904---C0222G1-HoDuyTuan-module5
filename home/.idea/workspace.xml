@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8746c41-123a-4599-9c4a-30aa9a00f2cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_s4_angular_component_template/practice/hack/angular-hackernews-app/src/app/article/article.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../_s4_angular_component_template/practice/hack/angular-hackernews-app/src/app/article/article.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../casestudy/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../casestudy/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/content/content.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/content/content.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../casestudy/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy/src/app/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../casestudy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../_s4_angular_component_template/practice/hack/angular-hackernews-app" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -91,6 +91,7 @@
       <workItem from="1658026582812" duration="6000" />
       <workItem from="1658134468004" duration="3090000" />
       <workItem from="1658151960269" duration="74000" />
+      <workItem from="1658220257297" duration="2707000" />
     </task>
     <servers />
   </component>
@@ -114,9 +115,9 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="447" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.860@0.0.1440.860" timestamp="1657782197904" />
-    <state x="501" y="185" key="FileChooserDialogImpl" timestamp="1658151968266">
+    <state x="501" y="185" key="FileChooserDialogImpl" timestamp="1658224872715">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="501" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1658151968266" />
+    <state x="501" y="185" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1658224872715" />
   </component>
 </project>
