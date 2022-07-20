@@ -10,10 +10,12 @@ import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import {RouterModule, Routes} from "@angular/router";
 import { HomeComponent } from './home/home.component';
+import { CustomerComponent } from './customer/customer.component';
 
 const router : Routes = [
   {path: 'list',component:FacilityComponent},
-  {path:'',component:HomeComponent}
+  {path:'',component:HomeComponent},
+  {path: 'listCustomer',component:CustomerComponent}
   ]
 
 @NgModule({
@@ -23,7 +25,8 @@ const router : Routes = [
     FooterComponent,
     ContentComponent,
     FacilityComponent,
-    HomeComponent
+    HomeComponent,
+    CustomerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
-// export interface Facility {
-//   // Facilityid:number,
-//   // name:string,
-// }
+export interface Facility {
+  name:string,
+  url:string,
+  area:number
+}

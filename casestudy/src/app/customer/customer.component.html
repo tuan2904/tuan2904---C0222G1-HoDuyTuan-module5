@@ -1,0 +1,48 @@
+<app-header></app-header>
+<table class="table table-dark table-striped">
+  <section class="intro">
+    <div class="bg-image h-100" style="background-image: url('https://file4.batdongsan.com.vn/2021/06/17/JGcIp0rf/20210617172417-2f9e.jpg');">
+      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0,0,0,.35);">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="table-responsive bg-white" data-mdb-perfect-scrollbar="true" style="position: relative; height: 445px;">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Name Customer</th>
+                    <th scope="col">Birth Day</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Id Card</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Type Customer</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr *ngFor="let customer of lists;index as i">
+                    <td>{{i+1}}</td>
+                    <th style="color: #666666;">{{customer.name}}</th>
+                    <td>{{customer.birth}}</td>
+                    <td>{{customer.gender}}</td>
+                    <td>{{customer.car}}</td>
+                    <td>{{customer.phone}}</td>
+                    <td>{{customer.email}}</td>
+                    <td>{{customer.address}}</td>
+                    <td>{{customer.type}}</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</table>
+<app-footer></app-footer>
+
+
