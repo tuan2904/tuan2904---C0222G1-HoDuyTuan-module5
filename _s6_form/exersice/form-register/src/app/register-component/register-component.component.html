@@ -1,1 +1,71 @@
-<p>register-component works!</p>
+<form [formGroup]="contractForm" (ngSubmit)="onSubmit()">
+
+  <p>
+    <label for="email">email </label>
+    <input type="text" id="email" name="email" formControlName="email">
+  </p>
+  <div
+    *ngIf="!email.valid && (email.dirty ||email.touched)">
+    <div [hidden]="!email.errors.required">
+      Email không đúng
+    </div>
+    <div [hidden]="!email.errors.email">
+      Phải có @ phia sau
+    </div>
+  </div>
+  <p>
+    <label for="password">password </label>
+    <input type="text" id="password" name="password" formControlName="password">
+  </p>
+
+  <p>
+    <label for="confirmPassword">confirmPassword</label>
+    <input type="text" id="confirmPassword" name="confirmPassword" formControlName="confirmPassword">
+  </p>
+
+  <div class="" *ngIf="contractForm.errors?.confirmPwValidator">
+    Passwords mismatch
+  </div>
+
+  <p>
+    <label for="country">country </label>
+    <select id="country" name="country" formControlName="country">
+      <option *ngFor="let c of listCountry">{{c.name}}
+      </option>
+    </select>
+  </p>
+  <div *ngIf="!country.valid && (country.dirty ||country.touched)">
+    <div [hidden]="!country.errors.required">
+      country is required
+    </div>
+  </div>
+  <p>
+    <label for="age">age </label>
+    <input type="text" id="age" name="age" formControlName="age">
+  </p>
+  <div class="" *ngIf="contractForm.controls.age.hasError('not18')
+    &&contractForm.controls.age.dirty">
+    age mismatch
+  </div>
+  <p>
+    <input id="gender" type="radio" [(ngModel)]="model.gender" name="gender" value="male">Male<br>
+    <input type="radio" [(ngModel)]="model.gender" name="gender" value="male">Female<br>
+  </p>
+  <p>
+    <label for="phone">phone </label>
+    <input type="text" id="phone" name="phone" formControlName="phone">
+  </p>
+  <div
+    *ngIf="!phone.valid && (phone.dirty ||phone.touched)">
+    <div [hidden]="!phone.errors.required">
+      phone không để trống.
+    </div>
+    <div [hidden]="!phone.errors.minLength">
+      Bắt đầu +84 và phải đủ 10 số.
+    </div>
+  </div>
+  <p>
+    <button type="submit" [disabled]="!contractForm.valid">Submit</button>
+  </p>
+
+</form>
