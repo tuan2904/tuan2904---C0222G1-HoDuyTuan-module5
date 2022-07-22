@@ -11,6 +11,8 @@ import {CommonModule} from "@angular/common";
 import {RouterModule, Routes} from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import { CustomerComponent } from './customer/customer.component';
+import { EditcustomerComponent } from './customer/editcustomer/editcustomer.component';
+import { CreatecustomerComponent } from './customer/createcustomer/createcustomer.component';
 
 const router : Routes = [
   {path: 'list',component:FacilityComponent},
@@ -26,7 +28,9 @@ const router : Routes = [
     ContentComponent,
     FacilityComponent,
     HomeComponent,
-    CustomerComponent
+    CustomerComponent,
+    EditcustomerComponent,
+    CreatecustomerComponent
   ],
   imports: [
     BrowserModule,
