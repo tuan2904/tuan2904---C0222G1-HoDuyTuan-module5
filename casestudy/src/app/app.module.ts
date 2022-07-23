@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { CustomerComponent } from './customer/customer.component';
 import { EditcustomerComponent } from './customer/editcustomer/editcustomer.component';
 import { CreatecustomerComponent } from './customer/createcustomer/createcustomer.component';
+import { ContailComponent } from './contail/contail.component';
+import { ContailListComponent } from './contail-list/contail-list.component';
 
 const router : Routes = [
   {path: 'list',component:FacilityComponent},
@@ -30,7 +32,9 @@ const router : Routes = [
     HomeComponent,
     CustomerComponent,
     EditcustomerComponent,
-    CreatecustomerComponent
+    CreatecustomerComponent,
+    ContailComponent,
+    ContailListComponent
   ],
   imports: [
     BrowserModule,
