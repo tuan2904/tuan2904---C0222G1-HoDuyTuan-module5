@@ -1,1 +1,20 @@
-<p>contail-list works!</p>
+<table class="table table-bordered">
+  <tr>
+    <td>No</td>
+    <td>Start Date</td>
+    <td>End Date</td>
+    <td>Deposit</td>
+    <td>Customer</td>
+    <td>Employee</td>
+    <td>Facility</td>
+  </tr>
+  <tr *ngFor="let listContracts of lists; index as i">
+      <td>{{i+1}}</td>
+      <td>{{listContracts.start}}</td>
+      <td>{{listContracts.end}}</td>
+      <td>{{listContracts.deposit}}</td>
+      <td>{{listContracts.customer}}</td>
+      <td>{{listContracts.employee}}</td>
+      <td>{{listContracts.facility}}</td>
+  </tr>
+</table>

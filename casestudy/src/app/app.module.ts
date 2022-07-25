@@ -19,7 +19,8 @@ import { ContailListComponent } from './contail-list/contail-list.component';
 const router : Routes = [
   {path: 'list',component:FacilityComponent},
   {path:'',component:HomeComponent},
-  {path: 'listCustomer',component:CustomerComponent}
+  {path: 'listCustomer',component:CustomerComponent},
+  {path: 'listContract',component:ContailListComponent}
   ]
 
 @NgModule({
