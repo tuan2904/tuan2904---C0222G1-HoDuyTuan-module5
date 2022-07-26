@@ -1,0 +1,16 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": "Ho Duy Tuan",
+      "birth": "2000-06-12",
+      "gender": "Nam",
+      "car": 1233494839,
+      "phone": 84912424232,
+      "email": "hd***@gmail.com",
+      "address": "Kon Tum",
+      "type": "Diamond"
+    }
+  ]
+}
+

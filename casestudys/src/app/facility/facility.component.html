@@ -1,0 +1,96 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row d-flex" style="margin-right: unset;padding-left: 45px">
+    <div class="col-md-3" style="padding-right:10px" *ngFor="let card of lists">
+      <div class="card position-relative" style="width: 18rem;">
+        <img src="{{card.url}}"
+             class="card-img-top" alt="..." style="height: 150px">
+        <div class="card-body" style="color: #adb5bd">
+          <h5 class="card-title">{{card.name}}</h5>
+          <p class="card-text">{{card.area}}<sup>2</sup></p>
+          <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Edit</a>&nbsp;
+          <a href="#" class="btn btn-primary delete" data-bs-toggle="modal" data-bs-target="#myModal">Delete</a>
+        </div>
+      </div>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+  </div>
+</div>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="" method="post" class="">
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="nameEdit" placeholder="Enter Name">
+            <label class="form-label">Name Service:</label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="areaEdit" placeholder="Area">
+            <label class="form-label">Area Service: <sup>2</sup> </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="costEdit" placeholder="Cost">
+            <label class="form-label">Cost Service: <sup>vnđ</sup> </label>
+          </div>
+          <div class="form-floating mb-3 mt-3" id="typeEdit">
+            <input class="form-control" type="text" placeholder="maxPeople">
+
+            <label class="form-label">Service Type:</label>
+          </div>
+          <div class="form-floating mb-3 mt-3" id="rentEdit">
+            <input class="form-control" type="text" placeholder="maxPeople">
+
+            <label class="form-label">Rent Type:</label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="maxPeopleEdit" placeholder="maxPeople">
+            <label class="form-label">Max People Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input class="form-control" type="text" id="roomEdit" placeholder="Room">
+            <label class="form-label">Room Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="descriptionEdit"
+                   placeholder="Description">
+            <label class="form-label">Description Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="poolAreaEdit" placeholder="poolArea">
+            <label class="form-label">Pool Area Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="numberFloorsEdit"
+                   placeholder="numberFloors">
+            <label class="form-label">Number Floors Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="freess"
+                   placeholder="numberFloors">
+            <label class="form-label">Free Service: </label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <button type="submit" class="btn btn-primary" id="hrefs" (click)="addNewArticle()">Create</button>
+          </div>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
