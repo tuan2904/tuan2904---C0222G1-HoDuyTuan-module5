@@ -1,0 +1,75 @@
+
+<div class="row" style="margin-right: unset">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h1  style="text-align: center">Thêm Vé</h1>
+    <form [formGroup]="busForm" (ngSubmit)="save()">
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="gia" name="gia" placeholder="Enter gia" formControlName="gia">
+        <label class="form-label" for="gia">Giá</label>
+      </div>
+      <div *ngIf="!gia.valid && (gia.dirty ||gia.touched)">
+        <div [hidden]="!gia.errors.required">
+          <p style="color: red">Gia is required</p>
+        </div>
+      </div>
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="di" name="di" formControlName="di">
+        <label class="form-label" for="di">Điểm Đi</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="den" name="den" formControlName="den">
+        <label class="form-label" for="den">Điểm Đến</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3" formGroupName="ve">
+        <select class="custom-select" formControlName="id">
+          <option *ngFor="let list of veBus" value="{{list.id}}">{{list.name}}</option>
+        </select>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="date" id="ngay" name="ngay" formControlName="ngay">
+        <label class="form-label" for="ngay">Ngày Khởi Hành</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="date" id="gio" name="gio" formControlName="gio">
+        <label class="form-label" for="gio">Giờ Khởi Hành</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="soLuong" name="soLuong" formControlName="soLuong">
+        <label class="form-label" for="soLuong">Số Lượng</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <button type="submit" [disabled]="!busForm.valid" href="#myModal" class="btn btn-success btn-block" data-toggle="modal">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-md-2"></div>
+</div>
+
+
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-confirm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="icon-box">
+          <i class="material-icons">&#xE876;</i>
+        </div>
+        <h4 class="modal-title w-100">Awesome!</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>

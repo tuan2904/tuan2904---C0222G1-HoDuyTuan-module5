@@ -10,8 +10,7 @@ import {TodoService} from '../todo.service';
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent implements OnInit {
-  todoO: Todo;
-  todos: Todo[] = [];
+    todos: Todo[] = [];
   content = new FormControl();
 
   constructor(private todoService: TodoService) {

@@ -1,28 +1,6 @@
 {
   "customer": [
     {
-      "id": 1,
-      "name": "Ho Duy Tuan",
-      "birth": "12/12/2000",
-      "gender": "Nam",
-      "car": 988290938,
-      "phone": 8498293839,
-      "email": "hd****@gmail.com",
-      "address": "Kon Tum",
-      "type": "Diamond"
-    },
-    {
-      "id": 2,
-      "name": "Nguyễn Văn An",
-      "birth": "12/12/1999",
-      "gender": "Nam",
-      "car": 988290938,
-      "phone": 8498293839,
-      "email": "na****@gmail.com",
-      "address": "Kon Tum",
-      "type": "Diamond"
-    },
-    {
       "id": 3,
       "name": "Ho Văn Tan",
       "birth": "12/12/2000",
@@ -44,6 +22,23 @@
       "address": "Kon Tum",
       "type": "Diamond"
     }
+  ],
+  "type": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinium"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    }
   ]
 }
-

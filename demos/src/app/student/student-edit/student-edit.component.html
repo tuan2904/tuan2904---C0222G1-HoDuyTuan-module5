@@ -1,0 +1,36 @@
+
+<div class="row" style="margin-right: unset">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h1  style="text-align: center">Edit New Student</h1>
+<!--    <form [formGroup]="studentForm" >-->
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="name" name="name" placeholder="Enter name" formControlName="name">
+        <label class="form-label" for="name">Name Student </label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="date" id="birth" name="birth" formControlName="birth">
+        <label class="form-label" for="birth">Birth Day</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="gender" name="gender" formControlName="gender">
+        <label class="form-label" for="gender">Gender</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3" formGroupName="class">
+        <select class="custom-select" formControlName="id">
+<!--          <option *ngFor="let list of classList" value="{{list.id}}">{{list.name}}</option>-->
+        </select>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+<!--        <button type="submit" (click)="onSubmit()"> Submit</button>-->
+      </div>
+    </form>
+  </div>
+
+  <div class="col-md-2"></div>
+</div>
+

@@ -1,0 +1,83 @@
+<!--<app-header></app-header>-->
+<!--<div class="container-xl">-->
+<!--  <div class="table-responsive">-->
+<!--    <div class="table-wrapper">-->
+<!--      <div class="table-title">-->
+<!--        <div class="row">-->
+<!--          <div class="col-sm-8"><h2>Student</h2></div>-->
+<!--          <div><a routerLink="/add">Thêm Vé</a> </div>-->
+<!--          <div class="col-sm-4">-->
+<!--            <app-search-student></app-search-student>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <table class="table table-striped table-hover table-bordered">-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--          <td>#</td>-->
+<!--          <td>Giá Xe</td>-->
+<!--          <td>Ngày Đi</td>-->
+<!--          <td>Ngày Đến</td>-->
+<!--          <td>Ngày Xuất Phát</td>-->
+<!--          <td>Giờ Xuất Phát</td>-->
+<!--          <td>Nhà Xe</td>-->
+<!--          <td>Số Lượng</td>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr *ngFor="let listBus of bus;index as i">-->
+<!--          <td>{{i + 1}}</td>-->
+<!--          <td>{{listBus.gia}}</td>-->
+<!--          <td>{{listBus.di}}</td>-->
+<!--          <td>{{listBus.den}}</td>-->
+<!--          <td>{{listBus.ngay}}</td>-->
+<!--          <td>{{listBus.gio}}</td>-->
+<!--          <td>{{listBus.ve.name}}</td>-->
+<!--          <td>{{listBus.soLuong}}</td>-->
+<!--          <td>-->
+<!--            <a routerLink="/add" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>-->
+<!--            <a  class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>-->
+<!--&lt;!&ndash;&lt;!&ndash;&lt;!&ndash;            <a type="button" title="delete" class="material-icons delete" data-bs-toggle="modal" &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;data-bs-target="#myModal" (click)="getCustomer(students)"><i class="material-icons">&#xE872;</i></a>&ndash;&gt;&ndash;&gt;&ndash;&gt;-->
+<!--          </td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--      </table>-->
+<!--      <div class="clearfix">-->
+<!--        <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>-->
+<!--        <ul class="pagination">-->
+<!--          <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>-->
+<!--          <li class="page-item  active"><a href="#" class="page-link">1</a></li>-->
+<!--          <li class="page-item"><a href="#" class="page-link">2</a></li>-->
+<!--          <li class="page-item"><a href="#" class="page-link">3</a></li>-->
+<!--          <li class="page-item"><a href="#" class="page-link">4</a></li>-->
+<!--          <li class="page-item"><a href="#" class="page-link">5</a></li>-->
+<!--          <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<!--&lt;!&ndash;<div class="modal" id="myModal">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div class="modal-dialog">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="modal-content">&ndash;&gt;-->
+
+<!--&lt;!&ndash;      <div class="modal-header">&ndash;&gt;-->
+<!--&lt;!&ndash;        <h4 class="modal-title">Modal Heading</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;      <div class="modal-body">&ndash;&gt;-->
+<!--&lt;!&ndash;        Id: {{remove.id}}&ndash;&gt;-->
+<!--&lt;!&ndash;        Name: {{remove.price}}&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;      <div class="modal-footer">&ndash;&gt;-->
+<!--&lt;!&ndash;        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="delete(remove.id)">Delete</button>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->

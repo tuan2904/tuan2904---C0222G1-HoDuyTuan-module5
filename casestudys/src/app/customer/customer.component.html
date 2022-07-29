@@ -1,19 +1,20 @@
 <app-header></app-header>
 <table class="table table-bordered">
   <tr>
-    <th scope="col">No</th>
-    <th scope="col">Name Customer</th>
-    <th scope="col">Birth Day</th>
-    <th scope="col">Gender</th>
-    <th scope="col">Id Card</th>
-    <th scope="col">Phone</th>
-    <th scope="col">Email</th>
-    <th scope="col">Address</th>
-    <th scope="col">Type Customer</th>
+    <td>No</td>
+    <td>Name Customer</td>
+    <td>Birth Day</td>
+    <td>Gender</td>
+    <td>Id Card</td>
+    <td>Phone</td>
+    <td>Email</td>
+    <td>Address</td>
+    <td>Type Customer</td>
+    <td>Delete</td>
   </tr>
   <tr *ngFor="let customer of lists;index as i">
     <td>{{i + 1}}</td>
-    <th style="color: #666666;">{{customer.name}}</th>
+    <td>{{customer.name}}</td>
     <td>{{customer.birth}}</td>
     <td>{{customer.gender}}</td>
     <td>{{customer.car}}</td>
@@ -21,9 +22,36 @@
     <td>{{customer.email}}</td>
     <td>{{customer.address}}</td>
     <td>{{customer.type}}</td>
+    <td>
+      <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" (click)="getCustomer(customer)">
+      Delete
+      </a>
+    </td>
+
+
   </tr>
 </table>
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        Id: {{remove.id}}
+        Name: {{remove.name}}
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="delete(remove.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>
 
 

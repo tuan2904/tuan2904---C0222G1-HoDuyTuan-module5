@@ -1,0 +1,55 @@
+
+<div class="row" style="margin-right: unset">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h1  style="text-align: center">Add New Student</h1>
+    <form [formGroup]="studentForm" (ngSubmit)="save()">
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="name" name="name" placeholder="Enter name" formControlName="name">
+        <label class="form-label" for="name">Name Student </label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="date" id="birth" name="birth" formControlName="birth">
+        <label class="form-label" for="birth">Birth Day</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="gender" name="gender" formControlName="gender">
+        <label class="form-label" for="gender">Gender</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3" formGroupName="class">
+        <select class="custom-select" formControlName="id">
+
+          <option *ngFor="let list of class" value="{{list.id}}">{{list.name}}</option>
+        </select>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <button type="submit" [disabled]="!studentForm.valid" href="#myModal" class="btn btn-success btn-block" data-toggle="modal">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-md-2"></div>
+</div>
+
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-confirm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="icon-box">
+          <i class="material-icons">&#xE876;</i>
+        </div>
+        <h4 class="modal-title w-100">Awesome!</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>

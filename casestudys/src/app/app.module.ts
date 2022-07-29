@@ -17,13 +17,16 @@ import {EmployeeComponent} from './employee/employee.component';
 import {CreateContailComponent} from './contail/create-contail/create-contail.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
+import {HttpClientModule} from '@angular/common/http';
 
 const router: Routes = [
   {path: 'list', component: FacilityComponent},
   {path: '', component: HomeComponent},
   {path: 'listCustomer', component: CustomerComponent},
   {path: 'listContract', component: ContailListComponent},
-  {path: 'createContract', component: EditContailComponent}
+  {path: 'createContract', component: EditContailComponent},
+  {path: 'createCustomer', component: CreatecustomerComponent}
+
 ];
 
 @NgModule({
@@ -40,13 +43,15 @@ const router: Routes = [
     ContailListComponent,
     EmployeeComponent,
     CreateContailComponent,
-    EditContailComponent  ],
+    EditContailComponent,
+      ],
   imports: [
     BrowserModule,
     FormsModule,
     CommonModule,
     RouterModule.forRoot(router),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

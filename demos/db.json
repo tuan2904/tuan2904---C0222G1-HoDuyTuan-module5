@@ -1,0 +1,115 @@
+{
+  "ve": [
+    {
+      "id": 1,
+      "di": "Đà Nẵng",
+      "den": "Kon Tum",
+      "ngay": "28/07/2022",
+      "gio": "7:00",
+      "nhaXe": {
+        "id": 1,
+        "name": "Minh Quốc"
+      },
+      "soLuong": 10
+    },
+    {
+      "id": 2,
+      "di": "Đà Nẵng",
+      "den": "Kon Tum",
+      "ngay": "28/07/2022",
+      "gio": "7:00",
+      "nhaXe": {
+        "id": 2,
+        "name": "Tân Anh"
+      },
+      "soLuong": 7
+    },
+    {
+      "id": 3,
+      "di": "Đà Nẵng",
+      "den": "Kon Tum",
+      "ngay": "28/07/2022",
+      "gio": "7:00",
+      "nhaXe": {
+        "id": 1,
+        "name": "Minh Quốc"
+      },
+      "soLuong": 9
+    },
+    {
+      "id": 4,
+      "gia": "2",
+      "di": "2",
+      "den": "2",
+      "ngay": "0022-02-22",
+      "gio": "0022-02-22",
+      "ve": {
+        "id": 1,
+        "name": "Minh Quốc"
+      },
+      "soLuong": "222"
+    },
+    {
+      "id": 5,
+      "gia": "21",
+      "di": "21",
+      "den": "1212",
+      "ngay": "0012-12-12",
+      "gio": "0121-02-21",
+      "nhaXe": {
+        "id": 1,
+        "name": "Minh Quốc"
+      },
+      "soLuong": "21212"
+    },
+    {
+      "id": 6,
+      "gia": "2",
+      "di": "2",
+      "den": "2",
+      "ngay": null,
+      "gio": null,
+      "ve": {
+        "id": 1,
+        "name": "Minh Quốc"
+      },
+      "soLuong": "22"
+    },
+    {
+      "id": 7,
+      "gia": "2",
+      "di": "2",
+      "den": "2",
+      "ngay": "0002-02-22",
+      "gio": "0222-02-22",
+      "ve": {
+        "id": "2",
+        "name": "Tân Anh"
+      },
+      "soLuong": "2222"
+    },
+    {
+      "id": 8,
+      "gia": "3",
+      "di": "3",
+      "den": "3",
+      "ngay": "2022-07-02",
+      "gio": "2022-07-09",
+      "ve": {
+        "id": "2",
+        "name": "Tân Anh"
+      },
+      "soLuong": "4"
+    }
+  ],
+  "xe": [
+    {
+      "id": 1,
+      "name": "Minh Quốc"
+    },
+    {
+      "id": 2,
+      "name": "Tân Anh"
+    }
+  ]
+}
