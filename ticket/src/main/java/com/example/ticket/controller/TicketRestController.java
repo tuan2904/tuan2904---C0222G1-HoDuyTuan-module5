@@ -1,9 +1,9 @@
-package com.example.demo.controller;
+package com.example.ticket.controller;
 
-import com.example.demo.model.Car;
-import com.example.demo.model.Ticket;
-import com.example.demo.service.ICarService;
-import com.example.demo.service.ITicketService;
+import com.example.ticket.model.Car;
+import com.example.ticket.model.Ticket;
+import com.example.ticket.service.ICarService;
+import com.example.ticket.service.ITicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -12,21 +12,18 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@org.springframework.web.bind.annotation.RestController()
+@RestController
 @CrossOrigin()
-public class RestController {
+public class TicketRestController {
     @Autowired
     private ITicketService iTicketService;
     @Autowired
     private ICarService carService;
 
-    @GetMapping( value = "/list-{id}")
-    public ResponseEntity<Iterable<Ticket>> findById(@PathVariable("id") int id) {
-        List<Ticket> ticket = iTicketService.findById(id);
+    @GetMapping(value = "/list/{id}")
+    public ResponseEntity<Ticket> findById(@PathVariable("id") int id) {
+        Ticket ticket = iTicketService.findById(id);
 
-        if (ticket.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }
         return new ResponseEntity<>(ticket, HttpStatus.OK);
     }
 
@@ -50,26 +47,42 @@ public class RestController {
 
     @PostMapping(value = "/add")
     public ResponseEntity<Iterable<Ticket>> addNew(@RequestBody Ticket ticket) {
-         carService.listCar();
+        carService.listCar();
         iTicketService.create(ticket);
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
+    @PutMapping(value = "/order")
+    public ResponseEntity<Ticket> orderTicket(@RequestBody Ticket ticket ){
+        iTicketService.create(ticket);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 
     @PutMapping(value = "/edit/{id}")
-    public ResponseEntity<Iterable<Ticket>> oderTicket(@PathVariable("id") int id, @RequestBody Ticket ticket){
+    public ResponseEntity<Iterable<Ticket>> oderTicket(@PathVariable("id") int id, @RequestBody Ticket ticket) {
         carService.listCar();
         iTicketService.findById(id);
         iTicketService.update(ticket);
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<>(headers, HttpStatus.OK);
     }
-    @GetMapping(value = "/search")
-    public ResponseEntity<Iterable<Ticket>> search(Ticket ticket) {
-        List<Ticket> tickets = iTicketService.search(ticket);
-        if (tickets.isEmpty()) {
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+
+    @GetMapping("/search/{go}")
+    public ResponseEntity<Iterable<Ticket>> searchByDestination(
+                                                 @PathVariable("go") String go) {
+        List<Ticket> tickets = iTicketService.search(go);
+        return new ResponseEntity<>(tickets,HttpStatus.OK);
+    }
+
+    @DeleteMapping(value = "/delete/{id}")
+    public ResponseEntity<Ticket> deleteCustomer(@PathVariable("id") int id) {
+        Ticket ticket = iTicketService.findById(id);
+        if (ticket == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>(tickets, HttpStatus.OK);
+
+        iTicketService.remove(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
+

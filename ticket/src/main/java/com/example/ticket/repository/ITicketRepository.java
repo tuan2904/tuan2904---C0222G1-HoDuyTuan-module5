@@ -1,7 +1,7 @@
-package com.example.demo.repository;
+package com.example.ticket.repository;
 
-import com.example.demo.model.Ticket;
-import org.springframework.beans.factory.annotation.Value;
+
+import com.example.ticket.model.Ticket;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -15,15 +15,15 @@ import java.util.List;
 @Transactional
 public interface ITicketRepository extends JpaRepository<Ticket, Integer> {
     @Modifying
-    @Query(value = "update ticket_car set den=:den,di=:di,gia=:gia,gio=:gio,ngay=:ngay," +
+    @Query(value = "update ticket set den=:den,di=:di,gia=:gia,gio=:gio,ngay=:ngay," +
             "soluong=:soluong,id_car=:id_car where id=:id", nativeQuery = true)
     void editTicket(@Param("den") String den, @Param("di") String di, @Param("gia") Double gia, @Param("gio") String gio
             , @Param("ngay") String ngay, @Param("soluong") String count, @Param("id_car") int idCar, @Param("id") int id);
 
-    @Query(value = "select * from ticket_car where id=:id", nativeQuery = true)
-    List<Ticket> findById(@Param("id") int id);
+    @Query(value = "select * from ticket where id=:id", nativeQuery = true)
+    Ticket findById(@Param("id") int id);
 
-    @Query(value = "select * from ticket_car where den:den", nativeQuery = true)
+    @Query(value = "select * from ticket where den like  :den", nativeQuery = true)
     List<Ticket> search(@Param("den") String den);
 
 }

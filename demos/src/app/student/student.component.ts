@@ -48,9 +48,9 @@ export class StudentComponent implements OnInit {
     );
   }
 
-  // getCustomer(student: IStudent) {
-  //   this.remove = student;
-  // }
+  getCustomer(student: IStudent) {
+    this.remove = student;
+  }
 
   StudentListSearch() {
     this.studentService.channelSearch.subscribe(value => {

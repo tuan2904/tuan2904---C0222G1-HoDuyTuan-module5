@@ -1,9 +1,8 @@
-package com.example.demo.service;
+package com.example.ticket.service;
 
-import com.example.demo.model.Ticket;
-import com.example.demo.repository.ITicketRepository;
+import com.example.ticket.model.Ticket;
+import com.example.ticket.repository.ITicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,18 +30,22 @@ public class TicketService implements ITicketService {
     }
     @Override
     public void update(Ticket ticket) {
-        iTicketRepository.editTicket(ticket.getDen(), ticket.getDi(),ticket.getGia(), ticket.getGio(), ticket.getNgay(), ticket.getSoLuong(),
-                ticket.getCar().getId(), ticket.getId());
+
 
     }
 
     @Override
-    public List<Ticket> findById(int id) {
+    public Ticket findById(int id) {
         return iTicketRepository.findById(id);
     }
 
     @Override
-    public List<Ticket> search(Ticket ticket) {
-        return (List<Ticket>) iTicketRepository.search(ticket.getDen());
+    public List<Ticket> search(String go) {
+        return iTicketRepository.search(go);
+    }
+
+    @Override
+    public void remove(int id) {
+        iTicketRepository.deleteById(id);
     }
 }

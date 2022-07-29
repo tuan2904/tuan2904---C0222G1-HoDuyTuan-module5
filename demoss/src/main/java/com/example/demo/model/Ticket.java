@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity(name = "ticketCar")
@@ -8,7 +10,7 @@ public class Ticket {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column(columnDefinition = "DOUBLE")
-    private String gia;
+    private double gia;
     @Column(columnDefinition = "VARCHAR(200)")
     private String di;
     @Column(columnDefinition = "VARCHAR(200)")
@@ -21,6 +23,7 @@ public class Ticket {
     private String soLuong;
 
     @ManyToOne
+    @JsonBackReference
     @JoinColumn(name = "idCar", referencedColumnName = "idCar")
     private Car car;
 
@@ -43,11 +46,11 @@ public class Ticket {
         this.id = id;
     }
 
-    public String getGia() {
+    public Double getGia() {
         return gia;
     }
 
-    public void setGia(String gia) {
+    public void setGia(double gia) {
         this.gia = gia;
     }
 
