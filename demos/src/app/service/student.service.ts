@@ -8,7 +8,7 @@ import {IClass} from '../iclass';
   providedIn: 'root'
 })
 export class StudentService {
-  private API_URL = 'http://localhost:3000';
+  private API_URL = 'http://localhost:8080';
 
   constructor(private http: HttpClient) {
   }
@@ -25,7 +25,7 @@ export class StudentService {
   }
 
   getAll(): Observable<IStudent[]> {
-    return this.http.get<IStudent[]>(this.API_URL + '/ve');
+    return this.http.get<IStudent[]>(this.API_URL + '/list');
   }
 
   getAllClass(): Observable<IClass[]> {
@@ -33,7 +33,7 @@ export class StudentService {
   }
 
   addNew(student): Observable<IStudent> {
-    return this.http.post<IStudent>(this.API_URL + '/student/', student);
+    return this.http.post<IStudent>(this.API_URL + '/ve/', student);
   }
 
   // @ts-ignore
@@ -42,23 +42,23 @@ export class StudentService {
   }
 
   delete(id: number): Observable<IStudent> {
-    return this.http.delete<IStudent>(this.API_URL + '/student/' + id);
+    return this.http.delete<IStudent>(this.API_URL + '/ve/' + id);
   }
 
   searchByName(key: string) {
-    return this.http.get<IStudent[]>(this.API_URL + '/student?name_like=' + key);
+    return this.http.get<IStudent[]>(this.API_URL + '/ve?di_like=' + key);
   }
   findById(id: number): Observable<IStudent> {
-    return this.http.get<IStudent>(this.API_URL + '/student/' + id);
+    return this.http.get<IStudent>(this.API_URL + '/ve/' + id);
   }
   getDataEditFromList(students: IStudent) {
     this.data.next(students);
   }
   updateCustomer(customer): Observable<IStudent> {
-    return this.http.put<IStudent>(this.API_URL + '/student/' + customer.id , customer);
+    return this.http.put<IStudent>(this.API_URL + '/ve/' + customer.id , customer);
   }
   updateStudent(id: number, customer: IStudent): Observable<IStudent> {
-    return this.http.patch<IStudent>(this.API_URL + '/student/' + id, customer);
+    return this.http.patch<IStudent>(this.API_URL + '/ve/' + id, customer);
 
   }
 }

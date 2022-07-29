@@ -2,6 +2,7 @@
   "ve": [
     {
       "id": 1,
+      "gia": 0,
       "di": "Đà Nẵng",
       "den": "Kon Tum",
       "ngay": "28/07/2022",
@@ -14,6 +15,7 @@
     },
     {
       "id": 2,
+      "gia": 0,
       "di": "Đà Nẵng",
       "den": "Kon Tum",
       "ngay": "28/07/2022",
@@ -26,6 +28,7 @@
     },
     {
       "id": 3,
+      "gia": 0,
       "di": "Đà Nẵng",
       "den": "Kon Tum",
       "ngay": "28/07/2022",
@@ -100,6 +103,45 @@
         "name": "Tân Anh"
       },
       "soLuong": "4"
+    },
+    {
+      "id": 9,
+      "gia": "",
+      "di": "",
+      "den": "",
+      "ngay": "",
+      "gio": "",
+      "ve": {
+        "id": 1,
+        "name": "Minh Quốc"
+      },
+      "soLuong": ""
+    },
+    {
+      "id": 10,
+      "gia": "",
+      "di": "",
+      "den": "",
+      "ngay": "",
+      "gio": "",
+      "ve": {
+        "id": "2",
+        "name": "Tân Anh"
+      },
+      "soLuong": "2"
+    },
+    {
+      "id": 11,
+      "gia": "",
+      "di": "",
+      "den": "",
+      "ngay": "",
+      "gio": "",
+      "ve": {
+        "id": 1,
+        "name": "Minh Quốc"
+      },
+      "soLuong": ""
     }
   ],
   "xe": [

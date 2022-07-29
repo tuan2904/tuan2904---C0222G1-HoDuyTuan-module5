@@ -6,6 +6,7 @@
         <div class="row">
           <div class="col-sm-8"><h2>Student</h2></div>
           <a routerLink="/add">Add</a>
+          <app-search-student></app-search-student>
           <div class="col-sm-4">
             <app-search-student></app-search-student>
           </div>
@@ -25,19 +26,17 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let students of student;index as i">
+        <tr *ngFor="let ticket of student;index as i">
           <td>{{i + 1}}</td>
-          <td>{{students.di}}</td>
-          <td>{{students.den}}</td>
-          <td>{{students.gia}}</td>
-          <td>{{students.ngay}}</td>
-          <td>{{students.gio}}</td>
-          <td>{{students.ve.name}}</td>
-          <td>{{students.soLuong}}</td>
+          <td>{{ticket.di}}</td>
+          <td>{{ticket.den}}</td>
+          <td>{{ticket.gia}}</td>
+          <td>{{ticket.ngay}}</td>
+          <td>{{ticket.gio}}</td>
+          <td>{{ticket.ve.name}}</td>
+          <td>{{ticket.soLuong}}</td>
           <td>
-            <a routerLink="/add" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-            <a routerLink="/edit/{{students.id}}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-            <a type="button" title="delete" class="material-icons delete" data-bs-toggle="modal" data-bs-target="#myModal" ><i class="material-icons">&#xE872;</i></a>
+            <button type="submit" routerLink="/dat/{{ticket.id}}"> Đặt Vé</button>
           </td>
         </tr>
         </tbody>

@@ -1,39 +1,58 @@
-
 <div class="row" style="margin-right: unset">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-    <h1  style="text-align: center">Add New Student</h1>
-    <form [formGroup]="studentForm" (ngSubmit)="save()">
+    <h1  style="text-align: center">Thêm Vé</h1>
+    <form [formGroup]="busForm" (ngSubmit)="save()">
       <div class="form-floating mb-3 mt-3">
-        <input class="form-control" type="text" id="name" name="name" placeholder="Enter name" formControlName="name">
-        <label class="form-label" for="name">Name Student </label>
+        <input class="form-control" type="text" id="gia" name="gia" placeholder="Enter gia" formControlName="gia">
+        <label class="form-label" for="gia">Giá</label>
+      </div>
+      <div *ngIf="!gia.valid && (gia.dirty ||gia.touched)">
+        <div [hidden]="!gia.errors.required">
+          <p style="color: red">Gia is required</p>
+        </div>
+      </div>
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="di" name="di" formControlName="di">
+        <label class="form-label" for="di">Điểm Đi</label>
       </div>
 
       <div class="form-floating mb-3 mt-3">
-        <input class="form-control" type="date" id="birth" name="birth" formControlName="birth">
-        <label class="form-label" for="birth">Birth Day</label>
+        <input class="form-control" type="text" id="den" name="den" formControlName="den">
+        <label class="form-label" for="den">Điểm Đến</label>
       </div>
 
-      <div class="form-floating mb-3 mt-3">
-        <input class="form-control" type="text" id="gender" name="gender" formControlName="gender">
-        <label class="form-label" for="gender">Gender</label>
-      </div>
-
-      <div class="form-floating mb-3 mt-3" formGroupName="class">
+      <div class="form-floating mb-3 mt-3" formGroupName="ve">
         <select class="custom-select" formControlName="id">
-
-          <option *ngFor="let list of class" value="{{list.id}}">{{list.name}}</option>
+          <option *ngFor="let list of veBus" value="{{list.id}}">{{list.name}}</option>
         </select>
       </div>
 
       <div class="form-floating mb-3 mt-3">
-        <button type="submit" [disabled]="!studentForm.valid" href="#myModal" class="btn btn-success btn-block" data-toggle="modal">Submit</button>
+        <input class="form-control" type="date" id="ngay" name="ngay" formControlName="ngay">
+        <label class="form-label" for="ngay">Ngày Khởi Hành</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="date" id="gio" name="gio" formControlName="gio">
+        <label class="form-label" for="gio">Giờ Khởi Hành</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input class="form-control" type="text" id="soLuong" name="soLuong" formControlName="soLuong">
+        <label class="form-label" for="soLuong">Số Lượng</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <button type="submit" href="#myModal" class="btn btn-success btn-block" data-toggle="modal">Submit</button>
       </div>
     </form>
   </div>
 
   <div class="col-md-2"></div>
 </div>
+
+
 
 <div id="myModal" class="modal fade">
   <div class="modal-dialog modal-confirm">

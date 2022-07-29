@@ -1,15 +1,16 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {HeaderComponent} from './header/header.component';
-import {BusListComponent} from './bus/bus-list/bus-list.component';
-import {BusCreateComponent} from './bus/bus-create/bus-create.component';
 import {StudentComponent} from './student/student.component';
+import {StudentEditComponent} from './student/student-edit/student-edit.component';
+import {StudentCreateComponent} from './student/student-create/student-create.component';
 
 
 const routes: Routes = [
   {path: 'list', component: StudentComponent},
   {path: '', component: HeaderComponent},
-  {path: 'add', component: BusCreateComponent},
+  {path: 'dat/:id', component: StudentEditComponent},
+  {path: 'add', component: StudentCreateComponent},
 ];
 
 @NgModule({

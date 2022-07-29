@@ -21,7 +21,6 @@ export class SearchStudentComponent implements OnInit {
   search() {
     this.studentService.searchByName(this.key.value).subscribe(value => {
       this.studentList = value;
-      // console.log(this.studentList);
       this.studentService.studentSearch(this.studentList);
       this.studentList = [];
     });

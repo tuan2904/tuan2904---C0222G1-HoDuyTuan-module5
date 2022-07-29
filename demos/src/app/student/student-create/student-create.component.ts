@@ -1,8 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {StudentService} from '../../service/student.service';
-import {FormControl, FormGroup} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {IClass} from '../../iclass';
 import {Router} from '@angular/router';
+import {XeService} from '../../service/xe.service';
+import {Ve} from '../../ve';
 
 @Component({
   selector: 'app-student-create',
@@ -10,44 +12,51 @@ import {Router} from '@angular/router';
   styleUrls: ['./student-create.component.css']
 })
 export class StudentCreateComponent implements OnInit {
-  class: IClass[];
-  studentForm = new FormGroup({
+  veBus: Ve[];
+  busForm = new FormGroup({
     id: new FormControl(),
-    name: new FormControl(),
-    birth: new FormControl(),
-    gender: new FormControl(),
-    class: new FormGroup({
-      id: new FormControl(1),
+    gia: new FormControl('', [Validators.required]),
+    di: new FormControl('', [Validators.required]),
+    den: new FormControl('', [Validators.required]),
+    ngay: new FormControl('', [Validators.required]),
+    gio: new FormControl('', [Validators.required]),
+    ve: new FormGroup({
+      idCar: new FormControl(1),
       name: new FormControl()
-    })
+    }),
+    soLuong: new FormControl('', [Validators.required]),
   });
+  get gia() {
+    return this.busForm.get('gia');
+  }
 
-  constructor(private studentService: StudentService,
+  constructor(private busService: XeService,
               private router: Router) {
   }
 
   ngOnInit(): void {
-    this.findAllClass();
+    this.findAll();
   }
 
   save() {
-    const student = this.studentForm.value;
-    for (const i of this.class) {
-      if (i.id == student.class.id) {
-        student.class.name = i.name;
+    const bus = this.busForm.value;
+    for (const i of this.veBus) {
+      if (i.idCar == bus.ve.idCar) {
+        bus.ve.name = i.name ;
         break;
       }
     }
-    this.studentService.addNew(student).subscribe(() => {
+    this.busService.addNew(bus).subscribe(() => {
       // alert('Create thanh cong');
       this.router.navigateByUrl('/list');
-      this.studentForm.reset();
+      this.busForm.reset();
     });
   }
 
-  findAllClass() {
-    this.studentService.getAllClass().subscribe(value => {
-      this.class = value;
+
+  findAll() {
+    this.busService.getList().subscribe(value => {
+      this.veBus = value;
     });
   }
 }

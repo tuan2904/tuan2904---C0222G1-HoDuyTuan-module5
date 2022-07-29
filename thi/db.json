@@ -1,0 +1,38 @@
+{
+  "ticket": [
+    {
+      "id": 1,
+      "dayGo": "Đà Nẵng",
+      "dayTo": "Kon Tum",
+      "days": "28/07/2022",
+      "hour": "7:00",
+      "car": {
+        "id": 1,
+        "name": "Minh Quốc"
+      },
+      "count": 10
+    },
+    {
+      "id": 2,
+      "dayGo": "Đà Nẵng",
+      "dayTo": "Kon Tum",
+      "days": "28/07/2022",
+      "hour": "7:00",
+      "car": {
+        "id": 2,
+        "name": "Tân Anh"
+      },
+      "count": 7
+    }
+  ],
+  "car": [
+    {
+      "id": 1,
+      "name": "Minh Quốc"
+    },
+    {
+      "id": 2,
+      "name": "Tân Anh"
+    }
+  ]
+}

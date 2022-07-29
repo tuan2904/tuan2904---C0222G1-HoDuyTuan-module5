@@ -12,8 +12,9 @@ import {StudentService} from '../service/student.service';
 export class StudentComponent implements OnInit {
   student: IStudent[];
 
-  IStudent = {
+  list: IStudent = {
     id: 0,
+    gia: 0,
     di: '',
     den: '',
     ngay: '',

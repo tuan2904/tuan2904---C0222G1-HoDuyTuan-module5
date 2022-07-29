@@ -1,4 +1,4 @@
 export interface Ve {
-  id: number;
+  idCar: number;
   name: string;
 }
