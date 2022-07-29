@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ITicketService {
     List<Ticket>listTicket();
+    void create(Ticket ticket);
+
 }

@@ -1,10 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {StudentService} from '../../service/student.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {IClass} from '../../iclass';
 import {Router} from '@angular/router';
-import {XeService} from '../../service/xe.service';
 import {Ve} from '../../ve';
+import {StudentService} from '../../service/student.service';
 
 @Component({
   selector: 'app-student-create',
@@ -30,7 +28,7 @@ export class StudentCreateComponent implements OnInit {
     return this.busForm.get('gia');
   }
 
-  constructor(private busService: XeService,
+  constructor(private busService: StudentService,
               private router: Router) {
   }
 

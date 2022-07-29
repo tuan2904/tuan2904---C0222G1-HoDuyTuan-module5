@@ -17,4 +17,9 @@ public class TicketService implements ITicketService {
     public List<Ticket> listTicket() {
         return iTicketRepository.findAll();
     }
+
+    @Override
+    public void create(Ticket ticket) {
+        iTicketRepository.save(ticket);
+    }
 }

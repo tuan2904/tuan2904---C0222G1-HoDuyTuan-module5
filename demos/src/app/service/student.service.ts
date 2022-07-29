@@ -3,6 +3,8 @@ import {HttpClient} from '@angular/common/http';
 import {BehaviorSubject, Observable} from 'rxjs';
 import {IStudent} from '../istudent';
 import {IClass} from '../iclass';
+import {Xe} from '../xe';
+import {Ve} from '../ve';
 
 @Injectable({
   providedIn: 'root'
@@ -24,21 +26,25 @@ export class StudentService {
     this.dataSearchChannel.next(students);
   }
 
+  getList(): Observable<Ve[]> {
+    return this.http.get<Ve[]>(this.API_URL + '/list-car');
+  }
+
   getAll(): Observable<IStudent[]> {
     return this.http.get<IStudent[]>(this.API_URL + '/list');
   }
 
   getAllClass(): Observable<IClass[]> {
-    return this.http.get<IClass[]>(this.API_URL + '/class');
+    return this.http.get<IClass[]>(this.API_URL + '/xe');
   }
 
-  addNew(student): Observable<IStudent> {
-    return this.http.post<IStudent>(this.API_URL + '/ve/', student);
+  addNew(xe): Observable<IStudent> {
+    return this.http.post<IStudent>(this.API_URL + '/add/', xe);
   }
 
   // @ts-ignore
   getListClass(): Observable<Class[]> {
-    return this.http.get<IClass[]>(this.API_URL + '/class');
+    return this.http.get<IClass[]>(this.API_URL + '/xe');
   }
 
   delete(id: number): Observable<IStudent> {
@@ -48,15 +54,19 @@ export class StudentService {
   searchByName(key: string) {
     return this.http.get<IStudent[]>(this.API_URL + '/ve?di_like=' + key);
   }
+
   findById(id: number): Observable<IStudent> {
     return this.http.get<IStudent>(this.API_URL + '/ve/' + id);
   }
+
   getDataEditFromList(students: IStudent) {
     this.data.next(students);
   }
+
   updateCustomer(customer): Observable<IStudent> {
-    return this.http.put<IStudent>(this.API_URL + '/ve/' + customer.id , customer);
+    return this.http.put<IStudent>(this.API_URL + '/ve/' + customer.id, customer);
   }
+
   updateStudent(id: number, customer: IStudent): Observable<IStudent> {
     return this.http.patch<IStudent>(this.API_URL + '/ve/' + id, customer);
 

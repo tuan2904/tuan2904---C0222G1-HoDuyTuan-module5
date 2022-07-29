@@ -142,6 +142,19 @@
         "name": "Minh Quốc"
       },
       "soLuong": ""
+    },
+    {
+      "id": 12,
+      "gia": "1",
+      "di": "1",
+      "den": "1",
+      "ngay": "0001-11-11",
+      "gio": "1111-11-11",
+      "ve": {
+        "idCar": 1,
+        "name": null
+      },
+      "soLuong": "2"
     }
   ],
   "xe": [

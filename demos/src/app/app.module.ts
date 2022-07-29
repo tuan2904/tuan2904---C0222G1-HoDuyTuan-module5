@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {StudentComponent} from './student/student.component';
-import {ClassComponent} from './class/class.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
@@ -18,7 +17,6 @@ import {StudentCreateComponent} from './student/student-create/student-create.co
   declarations: [
     AppComponent,
     StudentComponent,
-    ClassComponent,
     HeaderComponent,
     SearchStudentComponent,
     StudentEditComponent,
